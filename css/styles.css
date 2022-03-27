@@ -1,0 +1,119 @@
+/* Палитра цветов проекта */
+:root {
+  --main-background-color: #ffffff;
+  --first-background-color: #e5e5e5;
+  --second-background-color: #2f303a;
+  --hover-focus-color: #2196f3;
+  --white-text-color: #ffffff;
+  --title-text-color: #212121;
+  --primery-text-color: #757575;
+}
+
+body {
+  background-color: var(--main-background-color);
+  color: var(--primery-text-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Стили логотипа */
+.logo {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+/* Стили для шапки сайта */
+.site-nav .link,
+.site-contact .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--hover-focus-color);
+}
+
+.site-contact .link:hover,
+.site-contact .link:focus {
+  color: var(--hover-focus-color);
+}
+
+.site-nav .link.current {
+  color: var(--hover-focus-color);
+}
+/* Пеопределение цвета для контактов студии */
+.site-contact .link {
+  color: var(--primery-text-color);
+}
+
+/* Секция герой */
+.hero {
+  background-color: var(--second-background-color);
+}
+
+.hero-title {
+  color: var(--white-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button {
+  color: var(--white-text-color);
+  background-color: var(--hover-focus-color);
+}
+
+/* Стили секций страницы Студия */
+
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+/* Заголовки секций Преимущества и Команда */
+.feature .title,
+.team .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* Стили футера страницы Студия */
+
+.footer {
+  background: var(--second-background-color);
+}
+
+.footer.logo,
+.footer .address {
+  color: var(--white-text-color);
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: inherit;
+  text-decoration: none;
+}
