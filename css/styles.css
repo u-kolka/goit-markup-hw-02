@@ -3,6 +3,7 @@
   --main-background-color: #ffffff;
   --first-background-color: #e5e5e5;
   --second-background-color: #2f303a;
+  --button-background-color: #f5f4fa;
   --hover-focus-color: #2196f3;
   --white-text-color: #ffffff;
   --title-text-color: #212121;
@@ -15,7 +16,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
@@ -23,6 +24,9 @@ body {
   list-style: none;
 }
 
+.hidden {
+  color: transparent;
+}
 /* Стили логотипа */
 .logo {
   color: #000000;
@@ -31,6 +35,10 @@ body {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+}
+
+.part-logo {
+  color: var(--hover-focus-color);
 }
 
 /* Стили для шапки сайта */
@@ -62,7 +70,7 @@ body {
   color: var(--primery-text-color);
 }
 
-/* Секция герой */
+/* Стилизация Основного контента страницы. Секция герой */
 .hero {
   background-color: var(--second-background-color);
 }
@@ -76,14 +84,20 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-
-.button {
+/* Оформление кнопки "Заказать услугу" */
+.btn {
   color: var(--white-text-color);
   background-color: var(--hover-focus-color);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
-/* Стили секций страницы Студия */
-
+/* Стили всех секций страницы Студия */
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -91,18 +105,29 @@ body {
   line-height: 1.16;
   text-align: center;
 }
-/* Заголовки секций Преимущества и Команда */
-.feature .title,
-.team .title {
+
+/* Стили для секции Преимущества */
+.feature .title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
+/* Стили для секции Наша Команда */
+.team .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.job {
+  font-size: 16px;
+  line-height: 1.19;
+}
 
 /* Стили футера страницы Студия */
-
 .footer {
   background: var(--second-background-color);
 }
@@ -114,6 +139,37 @@ body {
 
 .footer a {
   color: rgba(255, 255, 255, 0.6);
-  font-style: inherit;
+  font-style: normal;
   text-decoration: none;
+}
+
+/* Стили для страницы Портфолио */
+.filter-btn {
+  color: var(--title-text-color);
+  background-color: var(--button-background-color);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--white-text-color);
+  background-color: var(--hover-focus-color);
+}
+
+.project .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project p {
+  font-size: 16px;
+  line-height: 1.88;
 }
