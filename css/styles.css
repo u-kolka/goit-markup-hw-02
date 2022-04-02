@@ -1,7 +1,6 @@
 /* Палитра цветов проекта */
 :root {
   --main-background-color: #ffffff;
-  --first-background-color: #e5e5e5;
   --second-background-color: #2f303a;
   --button-background-color: #f5f4fa;
   --hover-focus-color: #2196f3;
@@ -45,6 +44,7 @@ body {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+  letter-spacing: 0.03em;
 }
 
 .part-logo {
@@ -52,27 +52,27 @@ body {
 }
 
 /* Стили для шапки сайта */
-.site-nav .link,
-.site-contact .link {
+.site-nav-link,
+.site-contact-link {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: var(--main-font-size);
   line-height: 1.14;
-  letter-spacing: 0.02em;
   text-decoration: none;
+  letter-spacing: 0.02em;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav-link:hover,
+.site-nav-link:focus {
   color: var(--hover-focus-color);
 }
 
-.site-contact .link:hover,
-.site-contact .link:focus {
+.site-contact-link:hover,
+.site-contact-link:focus {
   color: var(--hover-focus-color);
 }
 
-.site-nav .link.current {
+.site-nav-link.current {
   color: var(--hover-focus-color);
 }
 /* Пеопределение цвета для контактов студии */
@@ -99,7 +99,6 @@ body {
   color: var(--white-text-color);
   background-color: var(--hover-focus-color);
   font-family: inherit;
-  font-style: normal;
   font-weight: 700;
   font-size: var(--button-font-size);
   line-height: 1.88;
@@ -114,10 +113,11 @@ body {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /* Стили для секции Преимущества */
-.feature .title {
+.feature-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: var(--main-font-size);
@@ -125,16 +125,18 @@ body {
   text-transform: uppercase;
 }
 /* Стили для секции Наша Команда */
-.team .title {
+.team-title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
-.job {
+.team-job {
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 /* Стили футера страницы Студия */
@@ -142,15 +144,21 @@ body {
   background: var(--second-background-color);
 }
 
-.footer.logo,
-.footer .address {
-  color: var(--white-text-color);
-}
-
-.footer a {
+.footer-link,
+.footer-address {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--hover-focus-color);
+}
+
+.footer.logo,
+.footer-address {
+  color: var(--white-text-color);
 }
 
 /* Стили для страницы Портфолио */
@@ -158,7 +166,6 @@ body {
   color: var(--title-text-color);
   background-color: var(--button-background-color);
   font-family: inherit;
-  font-style: normal;
   font-weight: 500;
   font-size: var(--button-font-size);
   line-height: 1.62;
@@ -172,7 +179,7 @@ body {
   background-color: var(--hover-focus-color);
 }
 
-.project .title {
+.project-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -180,7 +187,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.project p {
+.project-text {
   font-size: 16px;
   line-height: 1.88;
 }
